@@ -122,6 +122,7 @@
       <change beforePath="$PROJECT_DIR$/../cotizacion hosting/digitalocean.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cotizacion hosting/pdf-45.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cotizacion hosting/steelapp.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front.html" beforeDir="false" afterPath="$PROJECT_DIR$/front.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../crudpy/.idea/dictionaries/marco.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../crudpy/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../crudpy/app/forms.py" beforeDir="false" />
@@ -310,14 +311,32 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1420393803">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="52" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+            <state relative-caret-position="98">
+              <caret line="130" column="28" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -348,7 +367,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -359,9 +378,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="740" />
+    <option name="width" value="821" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -438,7 +457,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="740" height="775" extended-state="0" />
+    <frame x="-7" y="0" width="821" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23574731" />
@@ -466,17 +485,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/foundation.min.css" />
     <entry file="file://$PROJECT_DIR$/css/main.css.css" />
+    <entry file="file://$PROJECT_DIR$/front.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="130" column="28" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
         </state>
       </provider>
     </entry>

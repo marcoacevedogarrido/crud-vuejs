@@ -90,11 +90,11 @@
                                 <button @click="guardarActualizacion(index)" class="btn btn-success">Guardar</button>
                             </span>
                             <span v-else>
-                                <!-- Botón para mostrar el formulario de actualizar -->
+
                                 <button @click="verFormActualizar(index)" class="btn btn-warning">Actualizar</button>
-                                <!-- Botón para borrar -->
+
                                 <button @click="borrarPaciente(index)" class="btn btn-danger">Borrar</button>
-                                <!-- boton para descargar -->
+
                                 <button @click="exportExcel(index)" class="btn btn-success">Descargar</button>
                             </span>
                         </td>
@@ -109,43 +109,26 @@
             new Vue({
                 el: '#appcrud',
                 data: {
-                    // Input nombre
                     nombre: '',
-
-                    // Input apellido
                     apellido: '',
-
-                    // Input edad
                     edad: '',
-
-                    // Ver o no ver el formulario de actualizar
                     formActualizar: false,
-
-                    // La posición de tu lista donde te gustaría actualizar
                     idActualizar: -1,
-
-                    // Input nombre actualizar
                     nombreActualizar: '',
-
-                    // Input apellido actualizar
                     apellidoActualizar: '',
-
-                    // Input edad actualizar
                     edadActualizar: '',
-
-                    // Lista de pacientes
                     pacientes: []
                 },
 
                 methods: {
                     crear: function () {
-                        // Añadimos a nuestra lista
+                        // ingresar a lista
                         this.pacientes.push({
                             nombre: this.nombre,
                             apellido: this.apellido,
                             edad: this.edad
                         });
-                        // Vaciamos el formulario de añadir
+                        // vaciamos el formulario de añadir
                         this.nombre = '';
                         this.apellido = '';
                         this.edad = '';
