@@ -128,31 +128,30 @@
                             apellido: this.apellido,
                             edad: this.edad
                         });
-                        // vaciamos el formulario de añadir
+                        // vaciamos el formulario
                         this.nombre = '';
                         this.apellido = '';
                         this.edad = '';
                     },
 
                     verFormActualizar: function (paciente_id) {
-                        // Antes de mostrar el formulario de actualizar, rellenamos sus campos
+                        // antes de mostrar el formulario de actualizar, rellenamos
                         this.idActualizar = paciente_id;
                         this.nombreActualizar = this.pacientes[paciente_id].nombre;
                         this.apellidoActualizar = this.pacientes[paciente_id].apellido;
                         this.edadActualizar = this.pacientes[paciente_id].edad;
-                        // Mostramos el formulario
+                        // mostrar formulario
                         this.formActualizar = true;
                     },
 
                     borrarPaciente: function (paciente_id) {
-
                         this.pacientes.splice(paciente_id, 1);
                     },
 
                     guardarActualizacion: function (paciente_id) {
-                        // Ocultamos nuestro formulario de actualizar
+                        // ocultar formulario de actualizar
                         this.formActualizar = false;
-                        // Actualizamos los datos
+                        // actualizamos datos
                         this.pacientes[paciente_id].nombre = this.nombreActualizar;
                         this.pacientes[paciente_id].apellido = this.apellidoActualizar;
                         this.pacientes[paciente_id].edad = this.edadActualizar;
