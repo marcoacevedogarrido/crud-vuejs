@@ -37,6 +37,7 @@
             <div class="form-group row">
                 <div class="col-sm-4">
                     <button @click="crear" type="submit" class="btn btn-primary">Ingresar</button>
+                    <button @click="exportExcel(index)" class="btn btn-success">Descargar</button>
                 </div>
             </div>
         </section>
@@ -53,15 +54,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(paciente, index) in pacientes">
+                    <tr v-for="(usuario, index) in usuarios">
                         <td>
                             <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
+                                <!-- formulario para actualizar -->
                                 <input v-model="nombreActualizar" type="text" class="form-control">
                             </span>
                             <span v-else>
                                 <!-- Dato nombre -->
-                                {{ paciente.nombre }}
+                                {{ usuario.nombre }}
                             </span>
                         </td>
                         <td>
@@ -71,7 +72,7 @@
                             </span>
                             <span v-else>
                                 <!-- Dato nombre -->
-                                {{ paciente.apellido }}
+                                {{ usuario.apellido }}
                             </span>
                         </td>
                         <td>
@@ -81,7 +82,7 @@
                             </span>
                             <span v-else>
                                 <!-- Dato edad -->
-                                {{ paciente.edad }}
+                                {{ usuario.edad }}
                             </span>
                         </td>
                         <td>
@@ -90,12 +91,8 @@
                                 <button @click="guardarActualizacion(index)" class="btn btn-success">Guardar</button>
                             </span>
                             <span v-else>
-
                                 <button @click="verFormActualizar(index)" class="btn btn-warning">Actualizar</button>
-
-                                <button @click="borrarPaciente(index)" class="btn btn-danger">Borrar</button>
-
-                                <button @click="exportExcel(index)" class="btn btn-success">Descargar</button>
+                                <button @click="borrarUsuario(index)" class="btn btn-danger">Borrar</button>
                             </span>
                         </td>
                     </tr>
@@ -117,13 +114,13 @@
                     nombreActualizar: '',
                     apellidoActualizar: '',
                     edadActualizar: '',
-                    pacientes: []
+                    usuarios: []
                 },
 
                 methods: {
                     crear: function () {
                         // ingresar a lista
-                        this.pacientes.push({
+                        this.usuarios.push({
                             nombre: this.nombre,
                             apellido: this.apellido,
                             edad: this.edad
@@ -134,31 +131,31 @@
                         this.edad = '';
                     },
 
-                    verFormActualizar: function (paciente_id) {
+                    verFormActualizar: function (usuario_id) {
                         // antes de mostrar el formulario de actualizar, rellenamos
-                        this.idActualizar = paciente_id;
-                        this.nombreActualizar = this.pacientes[paciente_id].nombre;
-                        this.apellidoActualizar = this.pacientes[paciente_id].apellido;
-                        this.edadActualizar = this.pacientes[paciente_id].edad;
+                        this.idActualizar = usuario_id;
+                        this.nombreActualizar = this.usuarios[usuario_id].nombre;
+                        this.apellidoActualizar = this.usuarios[usuario_id].apellido;
+                        this.edadActualizar = this.usuarios[usuario_id].edad;
                         // mostrar formulario
                         this.formActualizar = true;
                     },
 
-                    borrarPaciente: function (paciente_id) {
-                        this.pacientes.splice(paciente_id, 1);
+                    borrarUsuario: function (usuario_id) {
+                        this.usuarios.splice(usuario_id, 1);
                     },
 
-                    guardarActualizacion: function (paciente_id) {
+                    guardarActualizacion: function (usuario_id) {
                         // ocultar formulario de actualizar
                         this.formActualizar = false;
                         // actualizamos datos
-                        this.pacientes[paciente_id].nombre = this.nombreActualizar;
-                        this.pacientes[paciente_id].apellido = this.apellidoActualizar;
-                        this.pacientes[paciente_id].edad = this.edadActualizar;
+                        this.usuarios[usuario_id].nombre = this.nombreActualizar;
+                        this.usuarios[usuario_id].apellido = this.apellidoActualizar;
+                        this.usuarios[usuario_id].edad = this.edadActualizar;
                     },
 
-                    exportExcel: function (paciente_id) {
-                      let data = XLSX.utils.json_to_sheet(this.pacientes)
+                    exportExcel: function (usuario_id) {
+                      let data = XLSX.utils.json_to_sheet(this.usuarios)
                       const workbook = XLSX.utils.book_new()
                       const filename = 'datosvuejs'
                       XLSX.utils.book_append_sheet(workbook, data, filename)

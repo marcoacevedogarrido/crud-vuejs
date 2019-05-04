@@ -122,7 +122,6 @@
       <change beforePath="$PROJECT_DIR$/../cotizacion hosting/digitalocean.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cotizacion hosting/pdf-45.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cotizacion hosting/steelapp.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front.html" beforeDir="false" afterPath="$PROJECT_DIR$/front.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../crudpy/.idea/dictionaries/marco.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../crudpy/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
@@ -323,12 +322,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="65" />
+          <entry key="html" value="328" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="65" />
+          <entry key="HTML" value="328" />
         </counts>
       </usages-collector>
     </session>
@@ -338,8 +337,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            <state relative-caret-position="98">
+              <caret line="93" column="117" selection-start-line="93" selection-start-column="117" selection-end-line="93" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -497,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="98">
+          <caret line="93" column="117" selection-start-line="93" selection-start-column="117" selection-end-line="93" selection-end-column="117" />
         </state>
       </provider>
     </entry>
