@@ -118,26 +118,23 @@
                 },
 
                 methods: {
-                    crear: function () {
-                        // ingresar a lista
+                    crear: function () {                        
                         this.usuarios.push({
                             nombre: this.nombre,
                             apellido: this.apellido,
                             edad: this.edad
-                        });
-                        // vaciamos el formulario
+                        });                        
                         this.nombre = '';
                         this.apellido = '';
                         this.edad = '';
                     },
 
-                    verFormActualizar: function (usuario_id) {
-                        // antes de mostrar el formulario de actualizar, rellenamos
+                    verFormActualizar: function (usuario_id) {                        
                         this.idActualizar = usuario_id;
                         this.nombreActualizar = this.usuarios[usuario_id].nombre;
                         this.apellidoActualizar = this.usuarios[usuario_id].apellido;
                         this.edadActualizar = this.usuarios[usuario_id].edad;
-                        // mostrar formulario
+                        // mostrar
                         this.formActualizar = true;
                     },
 
@@ -146,9 +143,9 @@
                     },
 
                     guardarActualizacion: function (usuario_id) {
-                        // ocultar formulario de actualizar
+                        // ocultar
                         this.formActualizar = false;
-                        // actualizamos datos
+                        // actualizar
                         this.usuarios[usuario_id].nombre = this.nombreActualizar;
                         this.usuarios[usuario_id].apellido = this.apellidoActualizar;
                         this.usuarios[usuario_id].edad = this.edadActualizar;
