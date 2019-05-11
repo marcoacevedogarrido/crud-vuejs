@@ -57,36 +57,36 @@
                     <tr v-for="(usuario, index) in usuarios">
                         <td>
                             <span v-if="formActualizar && idActualizar == index">
-                                <!-- formulario para actualizar -->
+                                <!-- formulario -->
                                 <input v-model="nombreActualizar" type="text" class="form-control">
                             </span>
                             <span v-else>
-                                <!-- Dato nombre -->
+                                <!-- dato nombre -->
                                 {{ usuario.nombre }}
                             </span>
                         </td>
                         <td>
                             <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
+                                <!-- actualizar -->
                                 <input v-model="apellidoActualizar" type="text" class="form-control">
                             </span>
                             <span v-else>
-                                <!-- Dato nombre -->
+                                <!-- dato nombre -->
                                 {{ usuario.apellido }}
                             </span>
                         </td>
                         <td>
                             <span v-if="formActualizar && idActualizar == index">
-                                <!-- Formulario para actualizar -->
+                                <!-- actualizar -->
                                 <input v-model="edadActualizar" type="text" class="form-control">
                             </span>
                             <span v-else>
-                                <!-- Dato edad -->
+                                <!-- dato edad -->
                                 {{ usuario.edad }}
                             </span>
                         </td>
                         <td>
-                            <!-- Botón para guardar la información actualizada -->
+                            <!-- guardar -->
                             <span v-if="formActualizar && idActualizar == index">
                                 <button @click="guardarActualizacion(index)" class="btn btn-success">Guardar</button>
                             </span>
